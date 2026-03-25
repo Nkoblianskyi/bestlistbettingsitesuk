@@ -10,6 +10,7 @@ import { AdvertiserInfoModal } from "@/components/advertiser-info-modal"
 import { FaqSection } from "@/components/faq-section"
 import { Shield, Award, Star, TrendingUp } from "lucide-react"
 import { AnimatedSportsIcons } from "@/components/animated-sports-icons"
+import { LiveUkDate } from "@/components/live-uk-date"
 
 const sectionWrap = "w-full max-w-[1000px] mx-auto px-4"
 
@@ -36,7 +37,13 @@ export default function Home() {
                   <br />
                   <span className="text-[hsl(40,75%,55%)]">RANKED &amp; REVIEWED</span>
                   <br />
-                  <span className="text-xl md:text-2xl lg:text-3xl">BestListBettingSitesUK</span>
+                  <span className="mt-2 block text-sm font-semibold uppercase tracking-wider text-[hsl(42,25%,88%)] md:text-base">
+                    Ranking last updated
+                  </span>
+                  <LiveUkDate
+                    variant="long"
+                    className="mt-1 block text-xl font-bold text-[hsl(40,75%,55%)] md:text-2xl lg:text-3xl"
+                  />
                 </h1>
 
                 <p

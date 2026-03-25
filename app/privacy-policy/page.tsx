@@ -1,5 +1,6 @@
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { LiveUkDate } from "@/components/live-uk-date"
 
 export const metadata = {
   title: "Privacy Policy | Best List Betting Sites UK",
@@ -19,7 +20,10 @@ export default function PrivacyPolicy() {
             </h1>
 
             <div className="prose max-w-none space-y-6 text-[hsl(220,20%,15%)]">
-              <p className="text-sm text-[hsl(220,15%,45%)]">Last updated: March 2025</p>
+              <p className="text-sm text-[hsl(220,15%,45%)]">
+                Last updated:{" "}
+                <LiveUkDate variant="short" className="font-semibold text-[hsl(0,45%,35%)]" />
+              </p>
 
               <p className="leading-relaxed">
                 This Privacy Policy describes how BestListBettingSitesUK.com (&quot;we&quot;, &quot;us&quot;) processes
