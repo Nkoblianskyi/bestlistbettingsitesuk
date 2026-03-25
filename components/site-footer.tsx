@@ -9,8 +9,8 @@ export function SiteFooter() {
         <div className="flex flex-col gap-10 border-b border-[hsl(220,15%,28%)] pb-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-md space-y-3">
             <Link href="/" className="inline-flex items-center gap-3 group">
-              <div className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-md border border-[hsl(35,85%,50%)]/40 bg-[hsl(220,25%,12%)] transition-transform duration-300 group-hover:scale-105">
-                <Image src="/uk-flag-logo.png" alt="" width={40} height={40} className="object-contain" />
+              <div className="relative flex h-11 w-11 bg-red-600 rounded-full items-center justify-center overflow-hidden  transition-transform duration-300 group-hover:scale-105">
+                <Image src="/favicon.ico" alt="" width={40} height={40} className="object-contain" />
               </div>
               <div>
                 <span className="block text-lg font-bold leading-tight text-[hsl(42,25%,96%)] transition-colors group-hover:text-[hsl(35,85%,50%)]">
