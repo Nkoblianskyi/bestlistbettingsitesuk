@@ -34,8 +34,8 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-[1000px] items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="relative h-10 w-10 rounded overflow-hidden flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-            <Image src="/uk-flag-logo.png" alt="UK Flag Logo" width={40} height={40} className="object-contain" />
+          <div className="relative h-10 w-10 bg-blue-600 rounded-full overflow-hidden flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+            <Image src="/favicon.ico" alt="UK Flag Logo" width={40} height={40} className="object-contain" />
           </div>
           <div className="flex flex-col">
             <span className="text-base md:text-lg font-bold text-[hsl(42,25%,96%)] transition-colors duration-300 group-hover:text-[hsl(40,75%,55%)] leading-tight">
