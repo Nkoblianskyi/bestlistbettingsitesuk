@@ -22,7 +22,7 @@ export default function CookiePolicy() {
               <p className="text-sm text-[hsl(220,15%,45%)]">Last updated: March 2025</p>
 
               <p className="leading-relaxed">
-                This Cookie Policy explains how TopListBettingSitesUK.com uses cookies and similar technologies. The
+                This Cookie Policy explains how BestListBettingSitesUK.com uses cookies and similar technologies. The
                 site is associated with <strong>Sigmastart04 GmbH</strong>, Zehmeplatz 14, 15230 Frankfurt, Germany.
               </p>
 
@@ -74,8 +74,8 @@ export default function CookiePolicy() {
               <h2 className="text-2xl font-bold text-[hsl(0,45%,35%)] mt-8">5. Contact</h2>
               <p className="leading-relaxed">
                 Questions about cookies? Email{" "}
-                <a href="mailto:cookies@toplistbettingsitesuk.com" className="text-[hsl(0,45%,35%)] font-semibold underline">
-                  cookies@toplistbettingsitesuk.com
+                <a href="mailto:cookies@bestlistbettingsitesuk.com" className="text-[hsl(0,45%,35%)] font-semibold underline">
+                  cookies@bestlistbettingsitesuk.com
                 </a>{" "}
                 or write to Sigmastart04 GmbH at the address above.
               </p>

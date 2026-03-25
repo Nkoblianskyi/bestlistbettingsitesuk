@@ -35,7 +35,7 @@ export default function RootLayout({
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-[hsl(42,25%,96%)]/75" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative z-10 min-h-screen flex flex-col">
           <CookieConsentProvider>

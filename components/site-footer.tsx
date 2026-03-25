@@ -1,182 +1,141 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Info, AlertTriangle } from "lucide-react"
+import { Info, AlertTriangle, MapPin } from "lucide-react"
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[hsl(220,20%,15%)] text-[hsl(42,25%,96%)] border-t-4 border-[hsl(35,85%,50%)]">
-      <div className="mx-auto max-w-[1000px] px-4 pt-12 pb-8">
-        <div className="space-y-8 border-b-2 border-[hsl(220,15%,25%)] pb-8">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-            <div className="md:col-span-4 space-y-4">
-              <Link href="/" className="flex items-center gap-2 group">
-                <div className="relative h-10 w-10 overflow-hidden flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                  <Image src="/uk-flag-logo.png" alt="UK Flag Logo" width={40} height={40} className="object-contain" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-lg font-bold text-[hsl(42,25%,96%)] transition-colors duration-300 group-hover:text-[hsl(35,85%,50%)] leading-tight">
-                    TopListBettingSitesUK
-                  </span>
-                </div>
-              </Link>
-              <p className="text-sm text-[hsl(42,25%,85%)] leading-relaxed">
-                TopListBettingSitesUK.com compares UK-licensed bookmakers so you can see welcome offers, features, and
-                our editorial verdicts in one place.
-              </p>
-              <div className="rounded border border-[hsl(220,15%,35%)] bg-[hsl(220,25%,12%)] p-4 text-xs text-[hsl(42,25%,85%)] leading-relaxed">
-                <p className="font-semibold text-[hsl(35,85%,50%)] mb-2">Site operator</p>
-                <p className="text-[hsl(42,25%,96%)]">Sigmastart04 GmbH</p>
-                <p>Zehmeplatz 14</p>
-                <p>15230 Frankfurt</p>
-                <p>Germany</p>
+    <footer className="border-t-4 border-[hsl(35,85%,50%)] bg-gradient-to-b from-[hsl(220,22%,14%)] to-[hsl(220,25%,10%)] text-[hsl(42,25%,96%)]">
+      <div className="mx-auto max-w-[1000px] px-4 pt-10 pb-6">
+        <div className="flex flex-col gap-10 border-b border-[hsl(220,15%,28%)] pb-10 md:flex-row md:items-start md:justify-between">
+          <div className="max-w-md space-y-3">
+            <Link href="/" className="inline-flex items-center gap-3 group">
+              <div className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-md border border-[hsl(35,85%,50%)]/40 bg-[hsl(220,25%,12%)] transition-transform duration-300 group-hover:scale-105">
+                <Image src="/uk-flag-logo.png" alt="" width={40} height={40} className="object-contain" />
               </div>
-            </div>
-
-            <div className="md:col-span-3">
-              <h3 className="text-base font-bold mb-4 text-[hsl(35,85%,50%)] uppercase tracking-wider">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="/"
-                    className="text-sm text-[hsl(42,25%,85%)] hover:text-[hsl(35,85%,50%)] transition-colors duration-300 flex items-center gap-2 group"
-                  >
-                    <span className="h-1 w-1 bg-[hsl(35,85%,50%)] rounded-full group-hover:w-2 transition-all duration-300"></span>
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about-us"
-                    className="text-sm text-[hsl(42,25%,85%)] hover:text-[hsl(35,85%,50%)] transition-colors duration-300 flex items-center gap-2 group"
-                  >
-                    <span className="h-1 w-1 bg-[hsl(35,85%,50%)] rounded-full group-hover:w-2 transition-all duration-300"></span>
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/privacy-policy"
-                    className="text-sm text-[hsl(42,25%,85%)] hover:text-[hsl(35,85%,50%)] transition-colors duration-300 flex items-center gap-2 group"
-                  >
-                    <span className="h-1 w-1 bg-[hsl(35,85%,50%)] rounded-full group-hover:w-2 transition-all duration-300"></span>
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/cookie-policy"
-                    className="text-sm text-[hsl(42,25%,85%)] hover:text-[hsl(35,85%,50%)] transition-colors duration-300 flex items-center gap-2 group"
-                  >
-                    <span className="h-1 w-1 bg-[hsl(35,85%,50%)] rounded-full group-hover:w-2 transition-all duration-300"></span>
-                    Cookie Policy
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="md:col-span-5">
-              <h3 className="text-base font-bold mb-4 text-[hsl(35,85%,50%)] text-center uppercase tracking-wider">
-                Responsible Gambling
-              </h3>
-              <div className="bg-[hsl(0,45%,35%)]/30 p-4 rounded border-2 border-[hsl(0,45%,35%)]">
-                <div className="flex items-center justify-center gap-2 mb-2">
-                  <div className="bg-[hsl(42,25%,96%)] p-1 rounded-full">
-                    <span className="text-[hsl(0,45%,35%)] font-bold text-xs">18+</span>
-                  </div>
-                  <span className="font-bold text-sm text-[hsl(42,25%,96%)]">Age Restriction</span>
-                </div>
-                <p className="text-xs text-[hsl(42,25%,85%)] text-center leading-relaxed">
-                  Gambling is for adults only. It is illegal for anyone under 18 to open an account or bet with a
-                  UK-licensed operator.
-                </p>
+              <div>
+                <span className="block text-lg font-bold leading-tight text-[hsl(42,25%,96%)] transition-colors group-hover:text-[hsl(35,85%,50%)]">
+                  BestListBettingSitesUK
+                </span>
+                <span className="text-xs font-medium text-[hsl(42,25%,70%)]">bestlistbettingsitesuk.com</span>
               </div>
-            </div>
+            </Link>
+            <p className="text-sm leading-relaxed text-[hsl(42,25%,82%)]">
+              Independent comparisons of UK-licensed bookmakers — welcome offers, features, and what we think matters on
+              match day.
+            </p>
           </div>
 
-          <div className="space-y-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className=" transition-transform duration-300 hover:scale-105 flex flex-col items-center">
-                <Link
-                  href="https://www.gambleaware.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-transform duration-300 hover:scale-105"
-                >
-                  <Image src="/gamble-aware.png" alt="BeGambleAware" width={100} height={35} className="mb-2" />
-                </Link>
-              </div>
+          <nav aria-label="Footer" className="grid grid-cols-2 gap-x-8 gap-y-2 sm:flex sm:flex-wrap sm:gap-x-10">
+            <Link href="/" className="text-sm font-medium text-[hsl(42,25%,88%)] hover:text-[hsl(35,85%,50%)]">
+              Home
+            </Link>
+            <Link href="/about-us" className="text-sm font-medium text-[hsl(42,25%,88%)] hover:text-[hsl(35,85%,50%)]">
+              About
+            </Link>
+            <Link
+              href="/privacy-policy"
+              className="text-sm font-medium text-[hsl(42,25%,88%)] hover:text-[hsl(35,85%,50%)]"
+            >
+              Privacy
+            </Link>
+            <Link
+              href="/cookie-policy"
+              className="text-sm font-medium text-[hsl(42,25%,88%)] hover:text-[hsl(35,85%,50%)]"
+            >
+              Cookies
+            </Link>
+          </nav>
+        </div>
 
-              <div className=" transition-transform duration-300 hover:scale-105 flex flex-col items-center">
-                <Link
-                  href="https://www.gamcare.org.uk/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-transform duration-300 hover:scale-105"
-                >
-                  <Image src="/gamcare.png" alt="GamCare" width={100} height={35} className="mb-2" />
-                </Link>
-              </div>
-
-              <div className="transition-transform duration-300 hover:scale-105 flex flex-col items-center">
-                <Link
-                  href="https://www.gamstop.co.uk/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-transform duration-300 hover:scale-105"
-                >
-                  <Image src="/gamstop.svg" alt="GAMSTOP" width={100} height={35} className="mb-2" />
-                </Link>
-              </div>
-
-              <div className=" transition-transform duration-300 hover:scale-105 flex flex-col items-center">
-                <Link
-                  href="https://www.gamblingcommission.gov.uk/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-transform duration-300 hover:scale-105"
-                >
-                  <Image
-                    src="/Gambling_Commission_logo.png"
-                    alt="UK Gambling Commission"
-                    width={100}
-                    height={35}
-                    className="mb-2"
-                  />
-                </Link>
-              </div>
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <div className="rounded-lg border border-[hsl(220,15%,30%)] bg-[hsl(220,25%,11%)] p-5">
+            <div className="mb-3 flex items-center gap-2 text-[hsl(35,85%,50%)]">
+              <MapPin className="h-4 w-4 shrink-0" aria-hidden />
+              <span className="text-xs font-bold uppercase tracking-wider">Operator</span>
             </div>
+            <p className="text-sm font-semibold text-[hsl(42,25%,96%)]">Sigmastart04 GmbH</p>
+            <p className="mt-1 text-sm text-[hsl(42,25%,78%)]">
+              Zehmeplatz 14
+              <br />
+              15230 Frankfurt
+              <br />
+              Germany
+            </p>
+          </div>
 
-            <p className="text-xs text-[hsl(42,25%,85%)] text-center leading-relaxed">
-              Betting should be entertainment, not a way to make money. If it stops feeling fun, pause and talk to
-              BeGambleAware or GamCare — or register with GAMSTOP to self-exclude from UK sites.
+          <div className="rounded-lg border-2 border-[hsl(0,45%,38%)] bg-[hsl(0,45%,28%)]/35 p-5">
+            <div className="mb-2 flex items-center justify-center gap-2 md:justify-start">
+              <span className="rounded-full bg-[hsl(42,25%,96%)] px-2 py-0.5 text-xs font-bold text-[hsl(0,45%,35%)]">
+                18+
+              </span>
+              <span className="text-sm font-bold">Responsible gambling</span>
+            </div>
+            <p className="text-center text-xs leading-relaxed text-[hsl(42,25%,88%)] md:text-left">
+              Only for adults. Under-18 gambling is illegal in the UK. Use deposit limits and take breaks when you need
+              them.
             </p>
           </div>
         </div>
-      </div>
 
-      <div className="bg-[hsl(220,30%,10%)] py-6 border-y border-[hsl(220,15%,25%)]">
-        <div className="mx-auto max-w-[1000px] px-4">
-          <div className="flex items-start gap-3 text-xs text-[hsl(42,25%,75%)] leading-relaxed">
-            <Info className="h-4 w-4 text-[hsl(35,85%,50%)] flex-shrink-0 mt-0.5" />
-            <p>
-              TopListBettingSitesUK.com is published for information and entertainment. We may earn a commission when you
-              sign up via our links; that does not change the price you pay. Content is aimed at adults aged 18+ in the
-              United Kingdom. Gambling carries risk — only stake what you can afford to lose. Listed brands hold UK
-              Gambling Commission licences unless stated otherwise. If gambling is harming you or someone close to you,
-              seek help promptly.
-            </p>
+        <div className="mt-8 rounded-xl border border-[hsl(220,15%,28%)] bg-[hsl(220,25%,9%)] px-4 py-6">
+          <p className="mb-4 text-center text-xs font-semibold uppercase tracking-wider text-[hsl(42,25%,65%)]">
+            Support &amp; regulation
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+            <Link
+              href="https://www.gambleaware.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-opacity hover:opacity-90"
+            >
+              <Image src="/gamble-aware.png" alt="BeGambleAware" width={100} height={35} />
+            </Link>
+            <Link
+              href="https://www.gamcare.org.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-opacity hover:opacity-90"
+            >
+              <Image src="/gamcare.png" alt="GamCare" width={100} height={35} />
+            </Link>
+            <Link
+              href="https://www.gamstop.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-opacity hover:opacity-90"
+            >
+              <Image src="/gamstop.svg" alt="GAMSTOP" width={100} height={35} />
+            </Link>
+            <Link
+              href="https://www.gamblingcommission.gov.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-opacity hover:opacity-90"
+            >
+              <Image src="/Gambling_Commission_logo.png" alt="UK Gambling Commission" width={100} height={35} />
+            </Link>
           </div>
+        </div>
+
+        <div className="mt-8 flex gap-3 rounded-lg bg-[hsl(220,28%,8%)] p-4 text-xs leading-relaxed text-[hsl(42,25%,72%)]">
+          <Info className="mt-0.5 h-4 w-4 shrink-0 text-[hsl(35,85%,50%)]" aria-hidden />
+          <p>
+            BestListBettingSitesUK.com is for information and entertainment. We may receive commission if you register
+            via our links. You must be 18+ and located in the UK. Gambling involves risk — never bet more than you can
+            afford to lose. Brands listed are UKGC-licensed unless noted. If gambling harms you or others, seek help
+            immediately.
+          </p>
         </div>
       </div>
 
-      <div className="bg-[hsl(220,20%,15%)] py-4">
-        <div className="mx-auto max-w-[1000px] px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-[hsl(42,25%,75%)]">© TopListBettingSitesUK.com. All rights reserved.</p>
-            <div className="flex items-center gap-2">
-              <AlertTriangle className="h-4 w-4 text-[hsl(35,85%,50%)]" />
-              <span className="text-xs text-[hsl(42,25%,75%)]">Gambling can be addictive. Play responsibly.</span>
-            </div>
+      <div className="border-t border-[hsl(220,15%,22%)] bg-[hsl(220,28%,8%)] py-4">
+        <div className="mx-auto flex max-w-[1000px] flex-col items-center justify-between gap-3 px-4 sm:flex-row">
+          <p className="text-center text-xs text-[hsl(42,25%,68%)] sm:text-left">
+            © {new Date().getFullYear()} bestlistbettingsitesuk.com · All rights reserved
+          </p>
+          <div className="flex items-center gap-2 text-[hsl(42,25%,68%)]">
+            <AlertTriangle className="h-4 w-4 shrink-0 text-[hsl(35,85%,50%)]" aria-hidden />
+            <span className="text-xs">Gambling can be addictive. Play responsibly.</span>
           </div>
         </div>
       </div>

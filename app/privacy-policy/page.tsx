@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
                   <span className="text-[hsl(35,85%,50%)] font-bold mr-2">•</span>
                   <div>
                     <strong className="text-[hsl(0,45%,35%)]">Affiliate identifiers</strong> — when you leave our site
-                    via a tracking link, partners may record that you arrived from TopListBettingSitesUK.com.
+                    via a tracking link, partners may record that you arrived from BestListBettingSitesUK.com.
                   </div>
                 </li>
               </ul>
@@ -101,8 +101,8 @@ export default function PrivacyPolicy() {
               <h2 className="text-2xl font-bold text-[hsl(0,45%,35%)] mt-8">7. Contact</h2>
               <p className="leading-relaxed">
                 For privacy questions or to exercise your rights, email{" "}
-                <a href="mailto:privacy@toplistbettingsitesuk.com" className="text-[hsl(0,45%,35%)] font-semibold underline">
-                  privacy@toplistbettingsitesuk.com
+                <a href="mailto:privacy@bestlistbettingsitesuk.com" className="text-[hsl(0,45%,35%)] font-semibold underline">
+                  privacy@bestlistbettingsitesuk.com
                 </a>{" "}
                 or write to: Sigmastart04 GmbH, Zehmeplatz 14, 15230 Frankfurt, Germany.
               </p>
