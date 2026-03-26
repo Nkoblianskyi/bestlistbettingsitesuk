@@ -40,8 +40,9 @@ export default function AboutUs() {
               <h2 className="text-2xl font-bold text-[hsl(0,45%,35%)] mt-8">Who operates this site</h2>
               <p className="leading-relaxed">
                 The website is published on behalf of{" "}
-                <strong className="text-[hsl(0,45%,35%)]">Sigmastart04 GmbH</strong>, Zehmeplatz 14, 15230 Frankfurt,
-                Germany. For privacy-related requests, please use the contact details in our Privacy Policy.
+                <strong className="text-[hsl(0,45%,35%)]">K.C. NTOMATA LIMITED</strong>, Stylianou Lena, 24 Christiana
+                Court, Flat/Office 202, Strovolos, Nicosia 2019, Кіпр. For privacy-related requests, please use the
+                contact details in our Privacy Policy.
               </p>
 
               <h2 className="text-2xl font-bold text-[hsl(0,45%,35%)] mt-8">Funding &amp; independence</h2>

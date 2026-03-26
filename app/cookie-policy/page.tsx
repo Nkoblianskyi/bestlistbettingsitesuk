@@ -27,7 +27,8 @@ export default function CookiePolicy() {
 
               <p className="leading-relaxed">
                 This Cookie Policy explains how BestListBettingSitesUK.com uses cookies and similar technologies. The
-                site is associated with <strong>Sigmastart04 GmbH</strong>, Zehmeplatz 14, 15230 Frankfurt, Germany.
+                site is associated with <strong>K.C. NTOMATA LIMITED</strong>, Stylianou Lena, 24 Christiana Court,
+                Flat/Office 202, Strovolos, Nicosia 2019, Кіпр.
               </p>
 
               <h2 className="text-2xl font-bold text-[hsl(0,45%,35%)] mt-8">1. What are cookies?</h2>
@@ -81,7 +82,7 @@ export default function CookiePolicy() {
                 <a href="mailto:cookies@bestlistbettingsitesuk.com" className="text-[hsl(0,45%,35%)] font-semibold underline">
                   cookies@bestlistbettingsitesuk.com
                 </a>{" "}
-                or write to Sigmastart04 GmbH at the address above.
+                or write to K.C. NTOMATA LIMITED at the address above.
               </p>
             </div>
           </div>

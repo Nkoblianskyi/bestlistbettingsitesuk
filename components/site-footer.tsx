@@ -53,13 +53,15 @@ export function SiteFooter() {
               <MapPin className="h-4 w-4 shrink-0" aria-hidden />
               <span className="text-xs font-bold uppercase tracking-wider">Operator</span>
             </div>
-            <p className="text-sm font-semibold text-[hsl(42,25%,96%)]">Sigmastart04 GmbH</p>
+            <p className="text-sm font-semibold text-[hsl(42,25%,96%)]">K.C. NTOMATA LIMITED</p>
             <p className="mt-1 text-sm text-[hsl(42,25%,78%)]">
-              Zehmeplatz 14
+              Stylianou Lena, 24 Christiana Court, Flat/Office 202
               <br />
-              15230 Frankfurt
+              Strovolos
               <br />
-              Germany
+              Nicosia 2019
+              <br />
+              Кіпр
             </p>
           </div>
 

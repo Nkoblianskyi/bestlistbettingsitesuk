@@ -28,9 +28,9 @@ export default function PrivacyPolicy() {
               <p className="leading-relaxed">
                 This Privacy Policy describes how BestListBettingSitesUK.com (&quot;we&quot;, &quot;us&quot;) processes
                 personal data when you use our website. The site is operated in connection with{" "}
-                <strong>Sigmastart04 GmbH</strong>, Zehmeplatz 14, 15230 Frankfurt, Germany. We process data in line with
-                applicable law, including the UK GDPR and the Data Protection Act 2018 where it applies to visitors
-                from the United Kingdom.
+                <strong>K.C. NTOMATA LIMITED</strong>, Stylianou Lena, 24 Christiana Court, Flat/Office 202, Strovolos,
+                Nicosia 2019, Кіпр. We process data in line with applicable law, including the UK GDPR and the Data
+                Protection Act 2018 where it applies to visitors from the United Kingdom.
               </p>
 
               <h2 className="text-2xl font-bold text-[hsl(0,45%,35%)] mt-8">1. Data we collect</h2>
@@ -108,7 +108,8 @@ export default function PrivacyPolicy() {
                 <a href="mailto:privacy@bestlistbettingsitesuk.com" className="text-[hsl(0,45%,35%)] font-semibold underline">
                   privacy@bestlistbettingsitesuk.com
                 </a>{" "}
-                or write to: Sigmastart04 GmbH, Zehmeplatz 14, 15230 Frankfurt, Germany.
+                or write to: K.C. NTOMATA LIMITED, Stylianou Lena, 24 Christiana Court, Flat/Office 202, Strovolos,
+                Nicosia 2019, Кіпр.
               </p>
             </div>
           </div>
